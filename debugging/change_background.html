@@ -9,7 +9,7 @@
         font-family: Arial, sans-serif;
         text-align: center;
         padding-top: 50px;
-        transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease; /* effet fluide */
     }
     button {
         padding: 10px 20px;
@@ -30,9 +30,8 @@
     });
 
     function changeBackgroundColor() {
-        // Generate a random color
+        // Générer une couleur aléatoire
         var randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0");
-        // Change the background color of the body
         document.body.style.backgroundColor = randomColor;
     }
 </script>
